@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:35:14 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/01 16:47:45 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/05 17:47:35 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,17 @@ int	ft_printf(const char *format, ...)
 
 	while (*format)
 	{
-		
+		if (*format == '%')
+			format = ft_search_arg(args, format);
+		else
+			format = ft_read_text(len, format);
+		if (!format)
+		{
+			write(1, "(null)", 6);
+			va_end(args);
+			return (len);
+		}
 	}
-
 	va_end(args);
-
 	return (len);
 }
