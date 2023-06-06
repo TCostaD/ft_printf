@@ -2,7 +2,7 @@
 
 ## **Sobre o projeto**
 
-Nesse projeto nós iremos recodificar a função ``printf()`` da ``libc``. Para insso, devemos seguir os seguintes requisitos:
+Nesse projeto nós iremos recodificar a função ``printf()`` da ``libc``. Para isso, devemos seguir os seguintes requisitos:
 * Não devemos implementar o gerenciamento de buffer da função original;
 * Nossa função deve lidar com as seguintes conversões: ``cspdiuxX%``;
 * Nossa função será comparada com o ``printf()`` original;
