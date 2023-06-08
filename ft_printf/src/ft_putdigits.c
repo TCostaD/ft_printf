@@ -1,21 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putdigits.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/05 18:05:24 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/08 11:21:09 by tcosta-d         ###   ########.fr       */
+/*   Created: 2023/06/08 16:38:15 by tcosta-d          #+#    #+#             */
+/*   Updated: 2023/06/08 16:38:16 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	main(void)
-{
-	int	num = 42;
-	printf("O número escolhido é o: %5d Fim\n", num);
-	printf("Colocando zeros no número: %03d\n", num);
-	return (0);
-}
