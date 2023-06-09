@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:35:14 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/08 16:39:46 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/09 16:30:17 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,9 @@ int	ft_parse_format(const char specifier, va_list args)
 
 	count = 0;
 	if (specifier == 'c')
-	{
-		ft_putchar_fd(va_arg(args, int), 1);
-		count++;
-	}
+		count += ft_putchar(va_arg(args, int));
 	else if (specifier == 's')
-	{
-		ft_putstr_fd(va_arg(args, char *), 1);
-		count += ft_strlen(va_arg(args, char *));
-	}
+		count += ft_putstr(va_arg(args, char *));
 	else if (specifier == 'p')
 		count += ft_putptr(va_arg(args, void *)); // esse ainda não existe
 	else if (specifier == 'd' || specifier == 'i')
@@ -38,7 +32,7 @@ int	ft_parse_format(const char specifier, va_list args)
 	else if (specifier == 'X')
 		count += ft_puthex(va_arg(args, unsigned int), 1); // esse ainda não existe
 	else if (specifier == '%')
-		count += ft_putchar_fd('%', 1);
+		count += ft_putchar('%');
 	return (count);
 }
 
