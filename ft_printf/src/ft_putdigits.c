@@ -12,7 +12,7 @@
 
 #include "../inc/libftprintf.h"
 
-int	ft_putdigits(int nb, int base)
+int	ft_putdigits(long nb, int base, char cap)
 {
 	int		count;
 	char	*symbolslow;
@@ -23,15 +23,16 @@ int	ft_putdigits(int nb, int base)
 	count = 0;
 	if (nb < 0)
 	{
-		count += ft_putchar('-');
-		nb *= -1;
+		ft_putchar('-');
+		return (ft_putdigits(-nb, base, cap) + 1);
 	}
 	if (nb < base)
-		count += ft_putchar(symbolslow[nb]);
-	else
 	{
-		count += ft_putdigits(nb / base, base);
-		count += ft_putchar(symbolslow[nb % base]);
+		if (cap == 'u')
+			return (ft_putchar(symbolsup[nb]));
+		else if (cap == 'l')
+			return (ft_putchar(symbolslow[nb]));
 	}
-	return (count);
+	count = ft_putdigits(nb / base, base, cap);
+	return (ft_putchar(symbolslow[nb % base]));
 }

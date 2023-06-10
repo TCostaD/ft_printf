@@ -24,13 +24,13 @@ int	ft_parse_format(const char specifier, va_list args)
 	else if (specifier == 'p')
 		count += ft_putptr(va_arg(args, void *)); // esse ainda não existe
 	else if (specifier == 'd' || specifier == 'i')
-		count += ft_putnbr_fd(va_arg(args, int), 1);
+		count += ft_putdigits((long)va_arg(args, int), 10, 'l');
 	else if (specifier == 'u')
 		count += ft_putunbr(va_arg(args, unsigned int)); // esse ainda não existe
 	else if (specifier == 'x')
-		count += ft_puthex(va_arg(args, unsigned int), 0); // esse ainda não existe
+		count += ft_putdigits((long)va_arg(args, int), 16, 'l');
 	else if (specifier == 'X')
-		count += ft_puthex(va_arg(args, unsigned int), 1); // esse ainda não existe
+		count += ft_putdigits((long)va_arg(args, int), 16, 'u');
 	else if (specifier == '%')
 		count += ft_putchar('%');
 	return (count);
@@ -48,7 +48,7 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			count += ft_parse_format(&format, args);
+			count += ft_parse_format(*format, args);
 		}
 		else
 		{

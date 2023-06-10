@@ -10,16 +10,32 @@
 #                                                                              #
 # **************************************************************************** #
 
-all:
+NAME = libftprintf.a
 
-bonus:
+SRC = src/ft_printf.c src/ft_putchars.c src/ft_putdigits.c \
+
+OBJ = $(SRC:.c=.o)
+
+CC = cc
+
+RM = rm -f
+
+CFLAGS = -Wall -Wextra -Werror
+
+.c.o:
+		$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
+
+$(NAME):	$(OBJ)
+		ar rcs $(NAME) $(OBJ)
+
+all:	$(NAME)
 
 clean:
+		$(RM) $(OBJ)
 
-fclean:
+fclean:	clean
+		$(RM) $(NAME)
 
-re:
+re:	fclean all
 
-teste:
-
-.PHONY: all bonus clean fclean re teste
+.PHONY: all clean fclean re

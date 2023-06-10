@@ -15,7 +15,6 @@
 int	main(void)
 {
 	int	num = 42;
-	printf("O número escolhido é o: %5d Fim\n", num);
-	printf("Colocando zeros no número: %03d\n", num);
+	printf("O número escolhido é o: %u Fim\n", -1);
 	return (0);
 }
