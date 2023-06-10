@@ -6,13 +6,13 @@
 #    By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/29 16:16:51 by tcosta-d          #+#    #+#              #
-#    Updated: 2023/06/10 16:38:35 by tcosta-d         ###   ########.fr        #
+#    Updated: 2023/06/10 18:12:51 by tcosta-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRC = src/ft_printf.c src/ft_putchars.c src/ft_putdigits.c \
+SRC = src/ft_printf.c src/ft_putchars.c src/ft_putdigits.c src/ft_putunbr.c\
 
 OBJ = $(SRC:.c=.o)
 

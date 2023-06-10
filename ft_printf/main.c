@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 18:05:24 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/10 17:42:13 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/10 18:43:58 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,9 @@ int	main(void)
 	printf("o: número decimal -> %d\n", 42);
 	ft_printf("m: número decimal -> %d\n", 42);
 
-	ft_putnbr_fd(1000);
+	printf("o: número decimal sem sinal: %u\n", -5);
+	ft_printf("m: número decimal sem sinal: %u\n", -5);
+	
 	printf("\n");
 	
 	return (0);

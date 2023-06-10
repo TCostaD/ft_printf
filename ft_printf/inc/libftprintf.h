@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/19 14:35:06 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/10 16:12:19 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/10 18:43:31 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,6 @@ int		ft_printf(const char *format, ...);
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_putdigits(long nb, int base, char cap);
+int		ft_putunbr(unsigned int nb);
 
 #endif
