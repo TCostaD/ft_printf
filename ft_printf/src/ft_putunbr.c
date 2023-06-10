@@ -11,16 +11,15 @@
 /* ************************************************************************** */
 
 #include "../inc/libftprintf.h"
-#include <stdio.h>
 
 int	ft_intlen(unsigned int n)
 {
 	int	len;
 
 	len = 0;
-	if (n <= 0)
-		len++;
-	while (n != 0)
+	if (n == 0)
+		return (1);
+	while (n > 0)
 	{
 		n = n / 10;
 		len++;
@@ -35,9 +34,11 @@ char	*ft_utoa(unsigned int n)
 
 	len = ft_intlen(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (str == 0)
+	if (!str)
 		return (NULL);
 	str[len] = '\0';
+	if (n == 0)
+		str[0] = '0';
 	while (len > 0)
 	{
 		len--;
