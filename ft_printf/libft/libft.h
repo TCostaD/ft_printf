@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 14:43:20 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/05/11 17:19:59 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/10 17:41:53 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		ft_toupper(int c);
 char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int		ft_putnbr_fd(int n);
 void	ft_putstr_fd(char *s, int fd);
 
 char	**ft_split(char const *s, char c);

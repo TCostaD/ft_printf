@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 16:38:15 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/09 16:43:51 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/10 17:24:26 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,9 @@ int	ft_putdigits(long nb, int base, char cap)
 			return (ft_putchar(symbolslow[nb]));
 	}
 	count = ft_putdigits(nb / base, base, cap);
-	return (ft_putchar(symbolslow[nb % base]));
+	if (cap == 'u')
+		return (ft_putchar(symbolsup[nb % base]));
+	else if (cap == 'l')
+		return (ft_putchar(symbolslow[nb % base]));
+	return (0);
 }
