@@ -28,9 +28,9 @@ int	ft_parse_format(const char specifier, va_list args)
 	else if (specifier == 'u')
 		count += ft_putunbr(va_arg(args, unsigned int));
 	else if (specifier == 'x')
-		count += ft_putdigits((long)va_arg(args, int), 16, 'l');
+		count += ft_putdigits((long)va_arg(args, unsigned int), 16, 'l');
 	else if (specifier == 'X')
-		count += ft_putdigits((long)va_arg(args, int), 16, 'u');
+		count += ft_putdigits((long)va_arg(args, unsigned int), 16, 'u');
 	else if (specifier == '%')
 		count += ft_putchar('%');
 	return (count);
