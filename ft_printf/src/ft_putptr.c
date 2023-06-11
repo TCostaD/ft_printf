@@ -15,9 +15,11 @@
 int	ft_putptr(void *ptr)
 {
 	int	count;
+	uintptr_t address;
 
 	count = 0;
+	address = (uintptr_t)ptr;
 	count += ft_putstr("0x");
-	count += ft_putdigits((unsigned int)ptr, 16, 'l');
+	count += ft_putdigits((uintptr_t)ptr, 16, 'l');
 	return (count);
 }
