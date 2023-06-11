@@ -22,7 +22,7 @@ int	ft_parse_format(const char specifier, va_list args)
 	else if (specifier == 's')
 		count += ft_putstr(va_arg(args, char *));
 	else if (specifier == 'p')
-	 	count += ft_putptr(va_arg(args, void *));
+		count += ft_putptr(va_arg(args, void *));
 	else if (specifier == 'd' || specifier == 'i')
 		count += ft_putdigits((long)va_arg(args, int), 10, 'l');
 	else if (specifier == 'u')
@@ -38,7 +38,7 @@ int	ft_parse_format(const char specifier, va_list args)
 
 int	ft_printf(const char *format, ...)
 {
-	va_list args;
+	va_list	args;
 	int		count;
 
 	count = 0;

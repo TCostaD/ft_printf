@@ -15,7 +15,7 @@
 int	ft_putptr(void *ptr)
 {
 	int	count;
-	uintptr_t address;
+	uintptr_t	address;
 
 	count = 0;
 	if (!ptr)

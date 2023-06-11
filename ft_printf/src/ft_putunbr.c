@@ -57,5 +57,5 @@ int	ft_putunbr(unsigned int nb)
 	str = ft_utoa(nb);
 	count = ft_putstr(str);
 	free(str);
-	return (count);	
+	return (count);
 }
