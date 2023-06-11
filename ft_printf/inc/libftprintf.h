@@ -22,5 +22,6 @@ int		ft_putchar(char c);
 int		ft_putstr(char *s);
 int		ft_putdigits(long nb, int base, char cap);
 int		ft_putunbr(unsigned int nb);
+int		ft_putptr(void *ptr);
 
 #endif

@@ -12,7 +12,8 @@
 
 NAME = libftprintf.a
 
-SRC = src/ft_printf.c src/ft_putchars.c src/ft_putdigits.c src/ft_putunbr.c\
+SRC = src/ft_printf.c src/ft_putchars.c src/ft_putdigits.c src/ft_putunbr.c \
+	src/ft_putptr.c \
 
 OBJ = $(SRC:.c=.o)
 
