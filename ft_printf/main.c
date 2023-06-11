@@ -22,8 +22,11 @@ int	main(void)
 	ft_printf("minha função\n");
 	printf("\n");
 
-	printf("o: String nula: %s\n", str);
-	ft_printf("m: String nula: %s\n\n", str);
+	printf("o: Ponteiro nulo com espec. s: %s\n", str);
+	ft_printf("m: Ponteiro nulo com espec. s: %s\n\n", str);
+
+	printf("o: Ponteiro nulo com espec. p: %p\n", str);
+	ft_printf("m: Ponteiro nulo com espec. p: %p\n\n", str);
 
 	printf("o: número hexadecimal minúsculo -> %x\n", 42);
 	ft_printf("m: número hexadecimal minúsculo -> %x\n\n", 42);
