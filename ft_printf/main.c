@@ -6,7 +6,7 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 18:05:24 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/10 18:43:58 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/11 15:01:07 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main(void)
 {
 	void *ptr = (void *)0x7ffeefbff5c8;
 	char *str = NULL;
+	int i = 0;
 
 	printf("função original\n");
 	ft_printf("minha função\n");
@@ -25,6 +26,20 @@ int	main(void)
 	printf("o: Ponteiro nulo com espec. s: %s\n", str);
 	ft_printf("m: Ponteiro nulo com espec. s: %s\n\n", str);
 
+	i = printf(" %p \n", (void *)-1);
+	printf(" Valor: %d \n", i);
+	i = printf(" %p \n", (void *)16);
+	printf(" Valor: %d \n", i);
+	i = printf(" %p \n", (void *)17);
+	printf(" Valor: %d \n\n", i);
+
+	i = ft_printf(" %p \n", (void *)-1);
+	printf(" Valor: %d \n", i);
+	i = ft_printf(" %p \n", (void *)16);
+	printf(" Valor: %d \n", i);
+	i = ft_printf(" %p \n", (void *)17);
+	printf(" Valor: %d \n\n", i);
+	
 	printf("o: Ponteiro nulo com espec. p: %p\n", str);
 	ft_printf("m: Ponteiro nulo com espec. p: %p\n\n", str);
 
