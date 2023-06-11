@@ -22,8 +22,8 @@ int	main(void)
 	printf("o: número hexadecimal minúsculo -> %x\n", 42);
 	ft_printf("m: número hexadecimal minúsculo -> %x\n", 42);
 
-	printf("o: número hexadecimal maiúsculo -> %X\n", 42);
-	ft_printf("m: número hexadecimal maiúsculo -> %X\n", 42);
+	printf("o: número hexadecimal maiúsculo -> %X\n", -42);
+	ft_printf("m: número hexadecimal maiúsculo -> %X\n", -42);
 
 	printf("o: número decimal -> %d\n", 42);
 	ft_printf("m: número decimal -> %d\n", 42);
