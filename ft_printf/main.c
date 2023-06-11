@@ -15,6 +15,8 @@
 
 int	main(void)
 {
+	void *ptr = (void *)0x7ffeefbff5c8;
+
 	printf("função original\n");
 	ft_printf("minha função\n");
 	printf("\n");
@@ -30,6 +32,9 @@ int	main(void)
 
 	printf("o: número decimal sem sinal: %u\n", -5);
 	ft_printf("m: número decimal sem sinal: %u\n", -5);
+
+	printf("o: Endereço do ponteiro: %p\n", ptr);
+	ft_printf("m: Endereço do ponteiro: %p\n", ptr);
 	
 	printf("\n");
 	

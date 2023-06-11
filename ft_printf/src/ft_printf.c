@@ -21,8 +21,8 @@ int	ft_parse_format(const char specifier, va_list args)
 		count += ft_putchar(va_arg(args, int));
 	else if (specifier == 's')
 		count += ft_putstr(va_arg(args, char *));
-	// else if (specifier == 'p')
-	// 	count += ft_putptr(va_arg(args, void *)); // esse ainda não existe
+	else if (specifier == 'p')
+	 	count += ft_putptr(va_arg(args, void *));
 	else if (specifier == 'd' || specifier == 'i')
 		count += ft_putdigits((long)va_arg(args, int), 10, 'l');
 	else if (specifier == 'u')
