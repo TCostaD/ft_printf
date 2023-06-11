@@ -18,6 +18,8 @@ int	ft_putptr(void *ptr)
 	uintptr_t address;
 
 	count = 0;
+	if (!ptr)
+		return (ft_putstr("(nil)"));
 	address = (uintptr_t)ptr;
 	count += ft_putstr("0x");
 	count += ft_putdigits(address, 16, 'l');
