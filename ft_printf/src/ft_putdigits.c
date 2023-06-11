@@ -38,5 +38,5 @@ int	ft_putdigits(long nb, int base, char cap)
 		return (ft_putchar(symbolsup[nb % base]));
 	else if (cap == 'l')
 		return (ft_putchar(symbolslow[nb % base]));
-	return (0);
+	return (count);
 }
