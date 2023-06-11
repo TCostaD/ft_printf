@@ -23,7 +23,7 @@ int	ft_putstr(char *s)
 
 	count = 0;
 	if (!s)
-		return (0);
+		return (write(1, "(null)", 6));
 	while (*s)
 		count += ft_putchar(*s++);
 	return (count);
