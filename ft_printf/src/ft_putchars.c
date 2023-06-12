@@ -6,11 +6,11 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 14:13:38 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/09 16:37:24 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/12 19:01:44 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libftprintf.h"
+#include "../inc/ft_printf.h"
 
 int	ft_putchar(char c)
 {

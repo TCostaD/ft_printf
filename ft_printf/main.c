@@ -6,12 +6,13 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 18:05:24 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/11 15:01:07 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/12 17:00:02 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include "inc/libftprintf.h"
+#include <limits.h>
+#include "inc/ft_printf.h"
 
 int	main(void)
 {
@@ -56,7 +57,10 @@ int	main(void)
 	ft_printf("m: número decimal sem sinal: %u\n\n", -5);
 
 	printf("o: Endereço do ponteiro: %p\n", ptr);
-	ft_printf("m: Endereço do ponteiro: %p\n", ptr);
+	ft_printf("m: Endereço do ponteiro: %p\n\n", ptr);
+
+	printf("o: limite minimo int: %d\n", -1);
+	ft_printf("%d\n\n", -1);
 	
 	printf("\n");
 	

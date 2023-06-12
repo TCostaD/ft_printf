@@ -6,11 +6,11 @@
 /*   By: tcosta-d < tcosta-d@student.42porto.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/10 17:45:49 by tcosta-d          #+#    #+#             */
-/*   Updated: 2023/06/10 18:47:19 by tcosta-d         ###   ########.fr       */
+/*   Updated: 2023/06/12 19:02:00 by tcosta-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libftprintf.h"
+#include "../inc/ft_printf.h"
 
 int	ft_intlen(unsigned int n)
 {
